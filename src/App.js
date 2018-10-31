@@ -10,7 +10,7 @@ import Footer from './pages/Footer';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Navbar />
           <Route exact path='/' component={ Home } />

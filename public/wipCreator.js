@@ -41,4 +41,4 @@ console.log(leImages);
 
   var imageString = JSON.stringify(leImages);
 
-  fs.writeFile("../src/pages/wip_list.json", imageString);
+  fs.writeFileSync("../src/pages/wip_list.json", imageString);

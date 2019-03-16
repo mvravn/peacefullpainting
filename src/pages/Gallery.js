@@ -37,12 +37,18 @@ class Gallery extends Component {
             <div>
                 <div className="container">
                     <div className="row">
+                        <div className="section">
+                            <br></br>
+                            <h2 className="center">The Cicle of Avidity</h2>
+                        </div>
+
                         <div className="hide-on-med-and-down">
                             <WorksInProgress images={this.state.wip}/>
                         </div>
+
                         <div className="section">
                             <h4 className="center">Gallery</h4>
-                            <p className="center">Currently in stock</p>
+                            <p className="center">Currently in stock - looking for a less peacefull home</p>
                         </div>
                         <GalleryCard images={this.state.images}/>
                     </div>

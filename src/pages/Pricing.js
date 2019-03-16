@@ -3,7 +3,10 @@ import React from 'react';
 const Pricing = () => {
     return (
         <div className="container">
-            <h4 className="center">Pricing and Services</h4>
+            <div className="section">
+            <br></br>
+                <h2 className="center">Pricing and Services</h2>
+            </div>
             <div className="row">
                 
                 <div className="col s12 l8 push-l2 section">
@@ -73,7 +76,7 @@ const Pricing = () => {
 
             <div className="row">
                 <div className="col s12 l8 push-l2 section">
-                    <h5>High-end tabletop std.</h5>
+                    <h5>Display Standard</h5>
                     <table className="striped">
                         <thead>
                         <tr>

@@ -13,9 +13,7 @@ const WorksInProgress = (props) => {
     });
     return (
         <div>
-            <div className="section">
-                <h4 className="center">Current Project</h4>
-            </div>
+            <h4 className="center">Recent Projects</h4>
             <div className="carousel">
             { wipList }
             </div>

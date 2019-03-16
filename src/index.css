@@ -128,7 +128,14 @@ a, a:active, a:focus {
   font-size: 125%;
 }
 
+.diamond {
+  font-size: 150%;
+  color: rgb(55, 71, 79) !important;
+}
 
+.carousel .carousel-item {
+  width:260px !important;
+}
 /* 
 ** suddenly the backdrop was over the nav-bar 
 ** more thorough solution [might] DID hide here: https://github.com/Dogfalo/materialize/issues/3844

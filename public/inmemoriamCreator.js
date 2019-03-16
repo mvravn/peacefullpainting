@@ -20,14 +20,14 @@ fs.readdirSync(folder).forEach(file => {
 		if(title.match(/ranger/ig)){
 			link = 'http://warhammer40k.wikia.com/wiki/Rangers';
 		}
-		else if(title.match(/avatar/ig)){
-			link = 'http://warhammer40k.wikia.com/wiki/Avatar';
+		else if(title.match(/squig/ig)){
+			link = 'https://warhammerfantasy.fandom.com/wiki/Colossal_Squig';
 		}
-		else if(title.match(/hawk/ig)){
-			link = 'http://warhammer40k.wikia.com/wiki/Swooping_Hawks';
+		else if(title.match(/slimux/ig)){
+			link = 'http://warhammer40k.wikia.com/wiki/Horticulous_Slimux';
 		}
-		else if(title.match(/spider/ig)){
-			link = 'http://warhammer40k.wikia.com/wiki/Warp_Spiders';
+		else if(title.match(/verminlord/ig)){
+			link = 'https://warhammerfantasy.fandom.com/wiki/Verminlord';
 		}
 		else{link = 'http://warhammer40k.wikia.com/wiki/Warhammer_40k_Wiki';}
 
@@ -41,4 +41,4 @@ console.log(leImages);
 
   var imageString = JSON.stringify(leImages);
 
-  fs.writeFile("../src/pages/inmemoriam_list.json", imageString);
+  fs.writeFileSync("../src/pages/inmemoriam_list.json", imageString);

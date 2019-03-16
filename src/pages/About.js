@@ -6,7 +6,8 @@ const About = () => {
             <div className="row">
                 <div className="col s12 l8 push-l2">
                     <div className="section">
-                        <h4 className="center">About Peacefull Painting</h4>
+                        <br></br>
+                        <h2 className="center">About Peacefull Painting</h2>
                         <div className="section">
                             <p>Peacefull Painting is a one man studio located in Copehnagen, Denmark. It is both a hobby and a dream come true. The prices are moderate, but the passion is big and ever growing.</p>
                             <p>You can hire me for commissions, or take a look in the gallery to see what's currently for sale and what I'm working on.</p>

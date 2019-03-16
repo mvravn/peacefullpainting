@@ -6,6 +6,8 @@ import wip_list from './wip_list.json';
 import SquigCarousel from './SquigCarousel';
 import squigs_list from './squigs_list.json';
 
+/* Tidligere er repo kaldet mvravn-github.io, ændret til peacefullpainting nu */
+
 class Home extends Component {
     state = {
         wip: wip_list.images,
@@ -46,13 +48,13 @@ class Home extends Component {
                             <div className="col s12 l8 offset-l2">
                                 {/*<div className="center-align section"><img src={window.location.origin + '/images/non-gallery/pplogo_transb.png'} alt="peacefull painging logo"/></div>*/}
                                 <br/><br/>
-                                <p className="flow-text center-align blue-grey-text text-darken-3">&diams;</p>
+                                <p className="diamond center-align blue-grey-text text-darken-3">&#9672;</p>
                                 <br/>
                                 <p className="flow-text">Peacefull Painting is a small painting studio, in love with painting miniatures and chilling. You can buy my own projects - mainly Warhammer - or you can hire me for a commission.</p>
                                 <p className="flow-text">Peacefull Painting is an after hours hobby, so you don't have to worry if the studio is still around next month or if someone is asking living-wages for what you have in mind.</p>
                                 <p className="flow-text">If in doubt, feel free to drop me an e-mail.</p>
                                 <br/>
-                                <p className="flow-text center-align blue-grey-text text-darken-3">&diams;</p>
+                                <p className="diamond center-align blue-grey-text text-darken-3">&#9672;</p>
                             </div>
                         </div>
                     </div>
@@ -113,13 +115,13 @@ class Home extends Component {
                                 <h3 className="center">3 - Watch your idea become reality...</h3>
                                 <p className="flow-text center">... and put it on the board, ready for war!</p>
                                 <br/>
-                                <p className="flow-text center-align blue-grey-text text-darken-3">&diams;</p>
+                                <p className="diamond center-align blue-grey-text text-darken-3">&#9672;</p>
                                 <br/>
                             </div>
                             <div className="col s12 l6 push-l3">
                                 <img className="responsive-img" src={window.location.origin + '/images/non-gallery/Vermin_Lord_Corruptor_1.jpg'} alt=""/>
                                 <br/><br/><br/>
-                                <p className="flow-text center-align blue-grey-text text-darken-3">&diams;</p>
+                                <p className="diamond center-align blue-grey-text text-darken-3">&#9672;</p>
                             </div>
                         </div>
                     </div>

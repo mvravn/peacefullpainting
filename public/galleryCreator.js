@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-var folder = './images/';
+var folder = './images/gallery/';
 var images = [];
 var leImages = { images };
 var i = 0;
@@ -41,4 +41,4 @@ console.log(leImages);
 
   var imageString = JSON.stringify(leImages);
 
-  fs.writeFile("../src/pages/image_list.json", imageString);
+  fs.writeFileSync("../src/pages/image_list.json", imageString);

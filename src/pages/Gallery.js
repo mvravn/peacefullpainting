@@ -50,7 +50,9 @@ class Gallery extends Component {
                             <h4 className="center">Gallery</h4>
                             <p className="center">Currently in stock - looking for a less peacefull home</p>
                         </div>
+
                         <GalleryCard images={this.state.images}/>
+
                     </div>
                 </div>
                 <div className="hide-on-large-only">
@@ -70,7 +72,9 @@ class Gallery extends Component {
                             <h4 className="center">In Memoriam</h4>
                             <p className="center">Miniatures no longer with us</p>
                         </div>
+
                         <InMemoriam images={this.state.inmemoriam}/>
+                        
                     </div>
                 </div>
                 <br/><br/><br/>

@@ -1,4 +1,6 @@
 https://www.youtube.com/watch?v=bjVUqvcCnxM
 10:15
 
+npm install node - hvis den ikke vil køre til at starte med.
+
 

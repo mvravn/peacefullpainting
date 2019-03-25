@@ -19,6 +19,10 @@ h1 {
   font-size: 370%;
 }
 
+.centerText {
+  text-align: center;
+}
+
 /* De tre #banner gør ændrer Materialize JavaScript Media Slideren til et banner */
 #banner .indicator-item {
   display: none;

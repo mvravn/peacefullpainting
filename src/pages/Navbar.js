@@ -20,7 +20,7 @@ const Navbar = () => {
                             <li><NavLink to="/Pricing">Pricing</NavLink></li>
                             <li><NavLink to="/About">About</NavLink></li>
                             <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Peaceful-Painting-1028253260684179/" className="btn-floating btn-small blue-grey darken-4 interHide"><i className="fab fa-facebook"></i></a></li>
-                            <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/peacefull_paint?lang=da" className="btn-floating btn-small blue-grey darken-4 interHide"><i className="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/PaintPeaceful" className="btn-floating btn-small blue-grey darken-4 interHide"><i className="fab fa-twitter"></i></a></li>
                             <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/peaceful.painting/" className="btn-floating btn-small blue-grey darken-4 interHide"><i className="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>

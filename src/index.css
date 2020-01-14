@@ -2,16 +2,23 @@ body {
   margin: 0;
   padding: 0;
   /* Makes the scrollbar always visible, avoiding ugly width-jumps */
-  overflow: -moz-scrollbars-vertical; 
+  overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
-  color:#333;
+  color: #333;
   -font-family: 'Fira Sans', sans-serif;
   -font-family: 'Slabo 27px', serif;
-  background-color: #fffdff; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #fffdff, #fdffff); /* Standard syntax (must be last) */
+  background-color: #fffdff;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #fffdff, #fdffff);
+  /* Standard syntax (must be last) */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Slabo 27px', serif;
 }
 
@@ -27,24 +34,27 @@ h1 {
 #banner .indicator-item {
   display: none;
 }
+
 #banner {
   height: 1000px !important;
 }
+
 #banner .slides {
   height: 1000px !important;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   #banner {
     height: 800px !important;
   }
+
   #banner .slides {
     height: 800px !important;
   }
 }
 
 /* Skjul mellem large og medium */
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
   .interHide {
     display: none;
   }
@@ -52,10 +62,13 @@ h1 {
 
 /* Farve når man markerer tekst */
 ::selection {
-  background: #607d8b ; /* WebKit/Blink Browsers */
+  background: #607d8b;
+  /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
-  background: #607d8b ; /* Gecko Browsers */
+  background: #607d8b;
+  /* Gecko Browsers */
 }
 
 /* Note til prislisten */
@@ -96,11 +109,13 @@ h1 {
 
 /* text outline #333 50% */
 .standout {
-  text-shadow: -1px -1px 0 rgba(48,48,48,0.1), 1px -1px 0 rgba(48,48,48,0.1), -1px 1px 0 rgba(48,48,48,0.1), 1px 1px 0 rgba(48,48,48,0.1);
+  text-shadow: -1px -1px 0 rgba(48, 48, 48, 0.1), 1px -1px 0 rgba(48, 48, 48, 0.1), -1px 1px 0 rgba(48, 48, 48, 0.1), 1px 1px 0 rgba(48, 48, 48, 0.1);
 }
 
 /* removes dotted outline in FF on link-tags such as the navbar items */
-a, a:active, a:focus {
+a,
+a:active,
+a:focus {
   outline: none;
 }
 
@@ -138,8 +153,9 @@ a, a:active, a:focus {
 }
 
 .carousel .carousel-item {
-  width:260px !important;
+  width: 260px !important;
 }
+
 /* 
 ** suddenly the backdrop was over the nav-bar 
 ** more thorough solution [might] DID hide here: https://github.com/Dogfalo/materialize/issues/3844
@@ -149,3 +165,19 @@ a, a:active, a:focus {
 }
 ** got it fixed, keeping as a reminder
 */
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  color: blue;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color:
+    rgba(55, 71, 79, 0.2);
+  outline: none;
+}
+
+.tabs .indicator {
+  background-color: #37474F;
+}

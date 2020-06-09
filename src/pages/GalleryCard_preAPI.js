@@ -4,16 +4,16 @@ import React from "react";
   /* HER SKAL DER INDSÆTTES BILLEDER, BRUG TIL AT FÅ DET TIL AT VIRKE */
 }
 
-const InMemoriam = (props) => {
+const GalleryCard = props => {
   const { images } = props;
-  const imList = images.map((image) => {
+  const imageList = images.map(image => {
     return (
       <div className="col s12 m4 l3" key={image.id}>
-        <div className="card">
+        <div className="card z-depth-2">
           <div className="card-image">
             <img
               className="materialboxed"
-              src={window.location.origin + "/images/inmemoriam/" + image.image}
+              src={window.location.origin + "/images/gallery/" + image.image}
               alt={image.title}
             />
           </div>
@@ -26,7 +26,7 @@ const InMemoriam = (props) => {
       </div>
     );
   });
-  return <div>{imList}</div>;
+  return <div>{imageList}</div>;
 };
 
-export default InMemoriam;
+export default GalleryCard;

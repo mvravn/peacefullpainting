@@ -6,7 +6,7 @@ import wip_list from "./wip_list.json";
 import SquigCarousel from "./SquigCarousel";
 import squigs_list from "./squigs_list.json";
 
-/* Tidligere er repo kaldet mvravn-github.io, ændret til peacefullpainting nu */
+/* Tidligere er repo kaldet mvravn-github.io, ændret til peacefulpainting nu */
 
 class Home extends Component {
   state = {
@@ -41,7 +41,7 @@ class Home extends Component {
               />
               <div className="caption center-align">
                 <h1 className="light grey-text text-lighten-3 standout">
-                  Peaceful Painting
+                  Peaceful Painting Studio
                 </h1>
                 <br />
                 <h5 className="light grey-text text-lighten-3 standout">
@@ -63,13 +63,14 @@ class Home extends Component {
                 </p>
                 <br />
                 <p className="flow-text">
-                  Peacefull Painting is a small painting studio, in love with
-                  painting miniatures and chilling. You can buy my own projects
-                  - mainly Warhammer - or you can hire me for a commission.
+                  Peaceful Painting Studio is a small painting studio, in love
+                  with painting miniatures and chilling. You can buy my own
+                  projects - mainly Warhammer - or you can hire me for a
+                  commission.
                 </p>
                 <p className="flow-text">
-                  Peacefull Painting is an after hours hobby, so you don't have
-                  to worry if the studio is still around next month or if
+                  Peaceful Painting Studio is an after hours hobby, so you don't
+                  have to worry if the studio is still around next month or if
                   someone is asking living-wages for what you have in mind.
                 </p>
                 <p className="flow-text">
@@ -84,7 +85,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container hide-on-med-and-up">
           <div className="row">
             <SquigCarousel images={this.state.squigs} />
           </div>
@@ -129,7 +130,7 @@ class Home extends Component {
                   a perfectionist?
                 </p>
                 <p className="flow-text">
-                  Don't get annoyed, just get a hold of Peacfull Painting.
+                  Don't get annoyed, just get a hold of Peacful Painting.
                 </p>
               </div>
             </div>

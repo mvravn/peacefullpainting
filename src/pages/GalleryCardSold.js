@@ -1,24 +1,6 @@
 import React from "react";
 
-{
-  /* HER SKAL DER INDSÆTTES BILLEDER, BRUG TIL AT FÅ DET TIL AT VIRKE */
-  {
-    /* https://res.cloudinary.com/dpnrlsiqx/image/upload/v1591481044/anderspp/IMG_0051_kzrsis.jpg */
-  }
-  {
-    /* anderspp/IMG_0051_kzrsis */
-  }
-  {
-    /* IMG_2338_nwhjnd */
-  }
-  // context.custom.caption
-  // https://res.cloudinary.com/demo/image/upload/ar_3.0,c_crop/sample.jpg
-  // https://res.cloudinary.com/demo/image/upload/w_1080,ar_4:5,c_fill/sample.jpg
-  // https://res.cloudinary.com/dpnrlsiqx/image/upload/v1591481044/anderspp/IMG_0051_kzrsis.jpg
-  // https://res.cloudinary.com/dpnrlsiqx/image/upload/v1591481044/anderspp/IMG_0051_kzrsis.jpg
-}
-
-const GalleryCard = (props) => {
+const GalleryCardSold = (props) => {
   const { images } = props;
   const imageList = images.map((image) => {
     return (
@@ -38,7 +20,7 @@ const GalleryCard = (props) => {
               alt={image.context.custom.caption}
             />
           </div>
-          <div className="card-content">
+          <div className="card-content card-content-sold">
             <a
               target="_blank"
               href={image.context.custom.alt}
@@ -46,6 +28,7 @@ const GalleryCard = (props) => {
             >
               {image.context.custom.caption}
             </a>
+            <img className="sold" src={"../../images/non-gallery/sold.png"} />
           </div>
         </div>
       </div>
@@ -54,4 +37,4 @@ const GalleryCard = (props) => {
   return <div>{imageList}</div>;
 };
 
-export default GalleryCard;
+export default GalleryCardSold;

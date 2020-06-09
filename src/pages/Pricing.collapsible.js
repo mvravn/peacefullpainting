@@ -93,7 +93,7 @@ class Pricing extends Component {
                         </tbody>
                       </table>
                       <p className="right note">
-                        Peaceful Painting · Last updated 16/3 2019
+                        Peaceful Painting Studio · Last updated 16/3 2019
                       </p>
                     </div>
                   </span>
@@ -177,7 +177,7 @@ class Pricing extends Component {
                         </tbody>
                       </table>
                       <p className="right note">
-                        Peaceful Painting · Last updated 16/3 2019
+                        Peaceful Painting Studio · Last updated 16/3 2019
                       </p>
                     </div>
                   </span>
@@ -261,7 +261,7 @@ class Pricing extends Component {
                         </tbody>
                       </table>
                       <p className="right note">
-                        Peaceful Painting · Last updated 16/3 2019
+                        Peaceful Painting Studio · Last updated 16/3 2019
                       </p>
                       <br />
                       <br />

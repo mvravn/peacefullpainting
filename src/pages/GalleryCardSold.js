@@ -11,7 +11,7 @@ const GalleryCardSold = (props) => {
               className="materialboxed"
               src={
                 "https://res.cloudinary.com/dpnrlsiqx/image/upload/" +
-                "w_1080,ar_4:5,c_fill/" +
+                "w_700,ar_4:5,c_fill/" +
                 "v1591481044/" +
                 image.public_id +
                 "." +
@@ -28,7 +28,11 @@ const GalleryCardSold = (props) => {
             >
               {image.context.custom.caption}
             </a>
-            <img className="sold" src={"../../images/non-gallery/sold.png"} />
+            <img
+              className="sold"
+              src={"../../images/non-gallery/sold.png"}
+              alt={"sold"}
+            />
           </div>
         </div>
       </div>

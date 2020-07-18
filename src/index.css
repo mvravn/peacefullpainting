@@ -5,8 +5,8 @@ body {
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
   color: #333;
-  -font-family: 'Fira Sans', sans-serif;
-  -font-family: 'Slabo 27px', serif;
+  -font-family: "Fira Sans", sans-serif;
+  -font-family: "Slabo 27px", serif;
   background-color: #fffdff;
   /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, #fffdff, #fdffff);
@@ -19,11 +19,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
 }
 
 h1 {
   font-size: 370%;
+}
+
+h4 {
+  margin-top: -10px;
 }
 
 .centerText {
@@ -109,7 +113,9 @@ h1 {
 
 /* text outline #333 50% */
 .standout {
-  text-shadow: -1px -1px 0 rgba(48, 48, 48, 0.1), 1px -1px 0 rgba(48, 48, 48, 0.1), -1px 1px 0 rgba(48, 48, 48, 0.1), 1px 1px 0 rgba(48, 48, 48, 0.1);
+  text-shadow: -1px -1px 0 rgba(48, 48, 48, 0.1),
+    1px -1px 0 rgba(48, 48, 48, 0.1), -1px 1px 0 rgba(48, 48, 48, 0.1),
+    1px 1px 0 rgba(48, 48, 48, 0.1);
 }
 
 /* removes dotted outline in FF on link-tags such as the navbar items */
@@ -124,22 +130,29 @@ a:focus {
 }
 
 /* 2-3 below are an unfinished fix for logo after navbar-fixed - https://stackoverflow.com/questions/51412303/materializecss-navbar-logo-image-position */
+@media only screen and (min-width: 992px) {
+  #nav {
+    position: relative;
+    left: 64px;
+  }
 
-#nav {
-  position: relative;
-  left: 64px;
+  .brand-logo>img {
+    -position: absolute;
+    top: 50%;
+    left: -54px;
+    transform: translateY(-50%);
+  }
+
+  .brand-logo {
+    -position: absolute;
+    height: 80%;
+  }
 }
 
-.brand-logo>img {
-  -position: absolute;
-  top: 50%;
-  left: -54px;
-  transform: translateY(-50%);
-}
-
-.brand-logo {
-  -position: absolute;
-  height: 80%;
+.small-brand-logo {
+  display: block;
+  float: right;
+  scale: 10%;
 }
 
 /* just toning it down a little */
@@ -166,6 +179,12 @@ a:focus {
 ** got it fixed, keeping as a reminder
 */
 
+.tab:hover {
+  /* background-color: rgba(242, 242, 242, 0.5); */
+  background-color: rgba(55, 71, 79, 0.2);
+  transition: all 0.2s;
+}
+
 .tabs .tab a:hover,
 .tabs .tab a.active {
   color: blue;
@@ -173,13 +192,12 @@ a:focus {
 
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
-  background-color:
-    rgba(55, 71, 79, 0.2);
+  background-color: rgba(55, 71, 79, 0.2);
   outline: none;
 }
 
 .tabs .indicator {
-  background-color: #37474F;
+  background-color: #37474f;
 }
 
 .card-content p {
@@ -191,13 +209,17 @@ a:focus {
   margin-bottom: 10px !important;
 }
 
+.showcard {
+  margin: 0 -16px 10px -16px;
+}
+
 .sold {
   height: 30px;
   transform: rotate(-30deg);
   float: right;
   position: absolute;
-  top: 86%;
-  left: 73%;
+  right: 10px;
+  bottom: 16px;
 }
 
 .pricingPlus {
@@ -208,12 +230,48 @@ a:focus {
 }
 
 .pricingImage {
-  /* padding: 60px; */
-  /* padding: 10%; */
   border-radius: 3px !important;
+}
+
+.card {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.showcard {
+  opacity: 1;
 }
 
 .card-image {
   padding: 5%;
   border-radius: 3px !important;
+}
+
+.small {
+  width: 50%;
+  height: 50%;
+}
+
+.card-title {
+  transition: all 1s;
+  text-shadow: -1px -1px 0 rgba(3, 155, 229, 0.05),
+    1px -1px 0 rgba(3, 155, 229, 0.05), -1px 1px 0 rgba(3, 155, 229, 0.05),
+    1px 1px 0 rgba(3, 155, 229, 0.05);
+}
+
+.card-title:hover {
+  text-shadow: -1px -1px 0 rgba(3, 155, 229, 0.3),
+    1px -1px 0 rgba(3, 155, 229, 0.3), -1px 1px 0 rgba(3, 155, 229, 0.3),
+    1px 1px 0 rgba(3, 155, 229, 0.3);
+}
+
+.icon-png {
+  height: 70%;
+  margin-bottom: -6px;
+}
+
+@media only screen and (max-width: 458px) {
+  .mobiletitle {
+    font-size: 70%;
+  }
 }

@@ -77,6 +77,80 @@ class Gallery extends Component {
       });
     // .then((json) => this.setState({ data: json }));
     // console.log("list: ", image_list.images);
+
+    // Sørger for at alle titler har samme højde. Ellers går card-fordelingen i vasken. Kører flere gange for at ramme så snart noget er klart.
+    setTimeout(function () {
+      var x = document.getElementsByClassName("card-title");
+      var titleheights = [];
+      for (let i = 0; i < x.length; i++) {
+        titleheights.push(x[i].clientHeight);
+      }
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.height = Math.max(...titleheights) + "px";
+      }
+    }, 100);
+    setTimeout(function () {
+      var x = document.getElementsByClassName("card-title");
+      var titleheights = [];
+      for (let i = 0; i < x.length; i++) {
+        titleheights.push(x[i].clientHeight);
+      }
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.height = Math.max(...titleheights) + "px";
+      }
+    }, 300);
+    setTimeout(function () {
+      var x = document.getElementsByClassName("card-title");
+      var titleheights = [];
+      for (let i = 0; i < x.length; i++) {
+        titleheights.push(x[i].clientHeight);
+      }
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.height = Math.max(...titleheights) + "px";
+      }
+    }, 500);
+    setTimeout(function () {
+      var x = document.getElementsByClassName("card-title");
+      var titleheights = [];
+      for (let i = 0; i < x.length; i++) {
+        titleheights.push(x[i].clientHeight);
+      }
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.height = Math.max(...titleheights) + "px";
+      }
+    }, 5000);
+
+    // Fade-in script
+    setTimeout(function () {
+      var y = document.getElementsByClassName("card");
+      // var titleheights = [];
+      for (let i = 0; i < y.length; i++) {
+        y[i].style.opacity = "1";
+      }
+      // for (let i = 0; i < x.length; i++) {
+      //   x[i].style.height = Math.max(...titleheights) + "px";
+      // }
+    }, 300);
+    setTimeout(function () {
+      var y = document.getElementsByClassName("card");
+      // var titleheights = [];
+      for (let i = 0; i < y.length; i++) {
+        y[i].style.opacity = "1";
+      }
+      // for (let i = 0; i < x.length; i++) {
+      //   x[i].style.height = Math.max(...titleheights) + "px";
+      // }
+    }, 800);
+    setTimeout(function () {
+      var y = document.getElementsByClassName("card");
+      // var titleheights = [];
+      for (let i = 0; i < y.length; i++) {
+        y[i].style.opacity = "1";
+      }
+      // for (let i = 0; i < x.length; i++) {
+      //   x[i].style.height = Math.max(...titleheights) + "px";
+      // }
+    }, 5000);
   }
 
   render() {
@@ -97,15 +171,15 @@ class Gallery extends Component {
       <div>
         {/* dis Gallery */}
         <div className="container">
-          <div className="row">
+          <div className="row" style={{ minHeight: "100vh" }}>
             <div className="section">
               <br></br>
               <h2 className="center">Gallery - The Cicle of Avidity</h2>
             </div>
             <div className="section">
-              <h4 className="center">Gallery - Display Standard</h4>
+              <h4 className="center">Display Standard</h4>
               <p className="center">
-                Currently in stock - looking for a less peaceful home
+                Some currently in stock - looking for a less peaceful home
               </p>
             </div>
             <GalleryCard images={this.state.images} />
@@ -134,15 +208,14 @@ class Gallery extends Component {
           <div className="row">
             <div className="section">
               <h4 className="center">
-                Gallery - Tabletop<span className="pricingPlus">+</span>{" "}
-                Standard
+                Tabletop<span className="pricingPlus">+</span> Standard
               </h4>
               <p className="center">
-                Currently in stock - looking for a less peaceful home
+                Some currently in stock - looking for a less peaceful home
               </p>
             </div>
             <GalleryCard images={this.state.images_ttp} />
-            <GalleryCard images={this.state.images_ttp_gone} />
+            <GalleryCardSold images={this.state.images_ttp_gone} />
           </div>
         </div>
         {/* parallax 2 */}
@@ -166,13 +239,13 @@ class Gallery extends Component {
         <div className="container">
           <div className="row">
             <div className="section">
-              <h4 className="center">Gallery - Tabletop Standard</h4>
+              <h4 className="center">Tabletop Standard</h4>
               <p className="center">
-                Currently in stock - looking for a less peaceful home
+                Some currently in stock - looking for a less peaceful home
               </p>
             </div>
             <GalleryCard images={this.state.images_tt} />
-            <GalleryCard images={this.state.images_tt_gone} />
+            <GalleryCardSold images={this.state.images_tt_gone} />
           </div>
         </div>
         <br />

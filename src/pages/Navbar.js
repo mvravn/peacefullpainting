@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  window.$(document).ready(function() {
+  window.$(document).ready(function () {
     window.$(".sidenav").sidenav();
   });
   return (
@@ -10,17 +10,32 @@ const Navbar = () => {
       <div className="navbar-fixed">
         <nav className="nav-wrapper blue-grey darken-3">
           <div className="container">
-            <a href="/" className="brand-logo hide-on-med-and-down" id="nav">
+            <a href="/" className="brand-logo" id="nav">
               <img
-                className="brand-logo"
+                className="brand-logo hide-on-med-and-down"
                 src={
                   window.location.origin +
                   "/images/non-gallery/pplogo_transw.png"
                 }
                 alt="peaceful painting Studio logo"
-              />{" "}
-              Peaceful Painting Studio
+              />
+              <span
+                className="hide-on-med-and-down"
+                style={{ marginLeft: "30px" }}
+              >
+                Peaceful Painting Studio
+              </span>
+              <span className="hide-on-large-only mobiletitle">
+                Peaceful Painting
+              </span>
             </a>
+            {/* <a
+              href="/"
+              className="brand-logo hide-on-large-and-up mobiletitle"
+              id="nav"
+            >
+              Peaceful Painting Studio
+            </a> */}
             <a href="/" className="sidenav-trigger" data-target="mobile-links">
               <i className="material-icons">menu</i>
             </a>
@@ -65,6 +80,22 @@ const Navbar = () => {
                   className="btn-floating btn-small blue-grey darken-4 interHide"
                 >
                   <i className="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.fiverr.com/peaceful_paint"
+                  className="btn-floating btn-small blue-grey darken-4 interHide"
+                >
+                  <img
+                    className="icon-png"
+                    src={
+                      window.location.origin + "/images/non-gallery/fiverr.png"
+                    }
+                    alt="fiverr icon"
+                  />
                 </a>
               </li>
             </ul>

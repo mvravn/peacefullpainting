@@ -3,7 +3,7 @@
 Netlify video: https://youtu.be/bjVUqvcCnxM?t=630
 
 
-## Opdater billeder:
+## Opdater billeder (forældet):
 
 a) Smid nye billeder i mappe
 b) Tjek for nye links hvis galleri

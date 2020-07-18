@@ -13,58 +13,7 @@
         "caption": "The Glottkin"
       }
     }
-  }, {
-    "public_id": "anderspp/IMG_2338_nwhjnd",
-    "version": 1591481044,
-    "format": "jpg",
-    "width": 955,
-    "height": 1195,
-    "type": "upload",
-    "created_at": "2020-06-06T22:04:04Z",
-    "context": {
-      "custom": {
-        "caption": "The Bøv"
-      }
-    }
-  }, {
-    "public_id": "anderspp/IMG_0057_pwkldb",
-    "version": 1591481044,
-    "format": "jpg",
-    "width": 2448,
-    "height": 3264,
-    "type": "upload",
-    "created_at": "2020-06-06T22:04:04Z",
-    "context": {
-      "custom": {
-        "caption": "Kholek Suneater"
-      }
-    }
-  }, {
-    "public_id": "anderspp/IMG_2337_pxttdl",
-    "version": 1591481043,
-    "format": "jpg",
-    "width": 956,
-    "height": 1280,
-    "type": "upload",
-    "created_at": "2020-06-06T22:04:03Z",
-    "context": {
-      "custom": {
-        "caption": "The Glottkin"
-      }
-    }
-  }, {
-    "public_id": "anderspp/IMG_2273_uaqetl",
-    "version": 1591481043,
-    "format": "jpg",
-    "width": 1080,
-    "height": 1350,
-    "type": "upload",
-    "created_at": "2020-06-06T22:04:03Z",
-    "context": {
-      "custom": {
-        "caption": "The Glottkin"
-      }
-    }
+
   }],
   "updated_at": "2020-06-07T15:02:20Z"
 }

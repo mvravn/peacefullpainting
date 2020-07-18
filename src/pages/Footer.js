@@ -22,6 +22,16 @@ const Footer = () => {
                   className="grey-text text-lighten-3"
                   target="_blank"
                   rel="noopener noreferrer"
+                  href="https://www.instagram.com/peaceful.painting.studio/"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  className="grey-text text-lighten-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.facebook.com/Peaceful-Painting-1028253260684179/"
                 >
                   Facebook
@@ -32,7 +42,7 @@ const Footer = () => {
                   className="grey-text text-lighten-3"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://twitter.com/peaceful_paint?lang=da"
+                  href="https://twitter.com/PaintPeaceful"
                 >
                   Twitter
                 </a>
@@ -42,9 +52,9 @@ const Footer = () => {
                   className="grey-text text-lighten-3"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.instagram.com/peaceful.painting.studio/"
+                  href="https://www.fiverr.com/peaceful_paint"
                 >
-                  Instagram
+                  Fiverr
                 </a>
               </li>
             </ul>

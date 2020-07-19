@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import WorksInProgress from "./WorksInProgress";
 import wip_list from "./wip_list.json";
 
 import SquigCarousel from "./SquigCarousel";
@@ -11,19 +10,19 @@ import squigs_list from "./squigs_list.json";
 class Home extends Component {
   state = {
     wip: wip_list.images,
-    squigs: squigs_list.images
+    squigs: squigs_list.images,
   };
 
   render() {
-    window.$(document).ready(function() {
+    window.$(document).ready(function () {
       window.$(".parallax").parallax();
     });
 
-    window.$(document).ready(function() {
+    window.$(document).ready(function () {
       window.$(".slider").slider();
     });
 
-    window.$(document).ready(function() {
+    window.$(document).ready(function () {
       window.$(".carousel").carousel();
     });
 
